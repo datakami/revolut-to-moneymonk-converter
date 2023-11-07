@@ -10,7 +10,8 @@ Formatting of output inspired by [https://github.com/adriaanvanrossum/n26-to-mon
 - Create a MoneyMonk bank account with the IBAN of your Revolut account
 - download your Revolut transaction statement as "Excel document" via the Revolut app or website
 - define custom rewrites for payee names and description strings (optional)
-- run this python script using `python -m converter`. Use `python -m converter -h` to learn about the commandline arguments.
+- run this python script using `python -m converter`. Use `python -m converter -h` to learn about the commandline arguments. Example: `python -m converter --iban [your revolut iban] -i [Revolut transaction statement CSV] -o my_revolut_transactions.csv` 
+- choose 'add transactions' in MoneyMonk and upload `my_revolut_transactions.csv` to import your transactions in MoneyMonk.
 
 Unfortunately I have not yet found a way to make Revolut work with a MoneyMonk account of type 'credit card'.
 
